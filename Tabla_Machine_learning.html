@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Building a Beat:</h1>
+					<h2>Machine Learning and North Indian Tabla Music</h2>
+					<p></p>
+					<p>Trace Norris</p>
+					<p>
+						<small>New Mexico Shared Knowledge Conference</small><br>
+					  <small> April 24, 2015</small>
+					</p>
+				</section>
+
+				<section data-transition="slide">
+					  <a href="#" >
+							<img width="210" height="205" data-src="images/twitter-ios-logo.png" alt="Twitter">
+						</a>
+						<p><h2>First a little bit of fun</h2></p>
+						<p>If you have a Twitter account send a tweet to:</p>
+						<p><h2>@Tabla_Bot</h2><p>
+						<p><small>This is a twitter bot I made that tweets back small tabla compositions</small><p>
+				</section>
+
+				<section data-transition="slide">
+						<h2>Table of Contents</h2>
+						<p><strong>Today we will cover:</strong></p>
+						<p class="fragment grow">Machine Learning</p>
+						<p class="fragment grow">Tabla Compositions</p>
+						<p class="fragment grow">Applications of ML to Tabla</p>
+				</section>
+
+				<section data-transition="zoom">
+					<section data-transition="zoom">
+						<h2>Machine Learning</h2>
+						<a href="#" >
+							<img width="370" height="229" data-src="images/machine_learning.jpg" alt="Cute ML">
+						</a>
+					</section>
+
+					<section data-transition="slide">
+						<p> What is machine learning?</p>
+						<p class="fragment roll-in"><i>The construction and use of algorithms that can learn from data.</i></p>
+					</section>	
+
+					<section data-transition="slide">
+						<p> Algorithm</p>
+						<p class="fragment current-visible"> <i>A procedure for solving some sort of problem</i></p>
+						<p>Training set</p>
+						<p class="fragment current-visible"> <i>A collection of data</i></p>
+					</section>	
+
+					<section data-transition="slide">
+						<p><h2> The 3 types learning </h2></p>
+						<p> Supervised </p>
+						<p> Unsupervised </p>
+						<p> Reinforcement </p>
+					</section>	
+
+					<section data-transition="fade">
+						<p><h2> Supervised </h2></p>
+						<ul>
+							<li>Example Inputs/Outputs provided</li>
+							<li>Trying to learn the rule(s) that govern inputs to outputs</li>
+							<li> Checking the algorithm's output against a different data set</li>
+							<li>example: Teaching a computer to recognize cat pictures</li>
+						</ul>
+					</section>	
+
+
+					<section data-transition="fade">
+						<p><h2> Unsupervised </h2></p>
+						<ul>
+							<li>Input is provided without labels</li>
+							<li>Trying to learn the rule(s) that govern the training set</li>
+							<li>There is no data set to check results against</li>
+							<li>example: Asking a computer to figure out the differences between photos of cats</li>
+						</ul>
+					</section>
+
+					<section data-transition="fade">
+						<p><h2> Reinforcement learning </h2></p>
+						<ul>
+							<li>Input is provided </li>
+							<li>A set of behaviors</li>
+							<li>Rules for transitioning between states</li>
+							<li>Reward rules</li>
+							<li>Rules that determine what can be seen</li>
+							<li>example: Teaching a computer to recognize cat pictures</li>
+							<li> different than supervised: reasons for incorrect outputs are not provided to the computer</li>
+						</ul>
+					</section>
+
+
+				</section>
+				<section data-transition="slide">
+					<section ata-transition="zoom">
+						<h2>Tabla</h2>
+						<p>
+							Some basic concepts pertaining to tabla
+						</p>
+						<a href="#" >
+							<img width="455" height="300" data-src="images/tablasetlrg.jpg" alt="Tabla pic">
+						</a>
+					</section>
+
+					<section data-transition="slide">
+						<p> Tabla are an Indian hand drum</p>
+						<a href="#" >
+							<img width="472" height="600" data-src="images/alla_rakha-472x730.jpg" alt="Ustad Allah Rakha">
+						</a>
+					</section>
+
+					<section data-transition="slide">
+						<p> The heads of the tabla </p>
+
+						<a href="#" >
+							<img width="657" height="333" data-src="images/pudi_drumhead.jpg" alt="Tabla B/W">
+						</a>
+
+					</section>	
+
+					<section data-transition="slide">
+						<p> Bols associated with the playing surface</p>
+
+						<a href="#" >
+							<img width="446" height="280" data-src="images/hit_locations.gif" alt="Tabla B/W">
+						</a>
+
+					</section>	
+
+					<section data-transition="slide">
+						<p><h2> Tabla bol examples<h2> </p>
+						<p><h3>Singular</h3></p>
+						<p> Ta, Tin, Tun, Din, Te, Re, Tha, Ge, Ka, -</p>
+						<p><h3>Compound</h3></p>
+						<p> Dha, Dhi, Dhe, Dhet, Kre, The</p>
+					</section>	
+
+					<section data-transition="slide">
+						<p><h2> Tabla composition </h2> </p>
+						<p>The Dha Tun Dha Dha - Tun Tin Tin Dha Dhi The Kre Tun Din Te Din Dhet Dhe Dhe Dhet Dhet Din Re Dha Dhi The Te Te The Dhet Tin Ge Re Dha3 Dhe Kre Tha - The Dhet Din Dha - Dha Re Dha Kre Re Tha</p>
+					</section>	
+
+					<section>
+						<video data-autoplay src="video/tabla_clips.mp4"></video>
+					</section>
+
+					<section data-transition="slide">
+						<p><h2> Rythmic structure </h2> </p>
+						<p> Cyclical vs Linear</p>  
+						<p> Western music has a linear beat structure</p> 
+						<a href="#" >
+							<img width="480" height="90" data-src="images/beat-counting-example-in-4-4-time.jpg" alt="4/4 music">
+						</a>
+						<p> Indian classical has a circular rythmic structure</p>
+						<a href="#" >
+							<img width="500" height="90" data-src="images/IMR4-text-based-Graphic-3.png" alt="Tabla music example">
+						</a>
+						<p> Jhaptal	is subdivided 2+3+2+3 </p>
+					</section>	
+
+					<section data-transition="slide">
+						<p><h2> Western Meter</h2> </p>
+						<p> 4/4   gives us      "1 & 2 & 3 & 4"</p>
+						<p> 3/4  gives us "1 & 2 & 3 &"" </p>
+					</section>	
+
+					<section data-transition="slide">
+						<p><h2> Indian Meter</h2> </p>
+						<p> Tintal is subdivided	4+4+4+4</p>
+						<p>Jhaptal	is divided	2+3+2+3</p>
+					</section>		
+
+					<section data-transition="slide">
+						<p><h2> Measures</h2> </p>
+						<p>So a measure of 4/4 would look like this</p>
+						<a href="#" >
+							<img width="512" height="248" data-src="images/44example.jpg" alt="4/4 example">
+						</a>
+					</section>	
+
+					<section data-transition="slide">
+						<p><h2> Measures</h2> </p>
+						<p>So a measure of Jhaptal would look like this</p>
+						<p>Ta Dhi | Ga Tin Ta | Kre Tha | Tun Tin Ta </p>
+						<p>But be played like this</p>
+						<p>Ta Dhi | Ga Tin Ta | Kre Tha | Tun Tin Ta |<font color="red"> Dha</font></p>
+					</section>						
+
+				</section>
+
+
+				<section data-transition="slide">
+					<section data-transition="slide">
+						<h2>Tabla+ML</h2>
+						<p>
+							Applying some ideas from machine learning to tabla compositions
+						</p>
+					</section>
+
+					<section data-transition="slide">
+						<h2>Ruby</h2>
+						<p>
+							All of the code for this project was written in Ruby (with some outside dependancies)
+						</p>
+						<a href="#" >
+							<img width="640" height="360" data-src="images/ruby.jpg" alt="4/4 example">
+						</a>
+					</section>
+
+					<section data-transition="slide">
+						<p>
+							Some generators
+						</p>
+						<pre><code data-trim contenteditable>
+ def gen_string_of_hits numberofhits
+
+  gen_string_of_hits 5
+ =>  Te Dha3 Ge Tun Re
+
+def gen_equal_subdivision numberofhits, matradiv
+
+ gen_equal_subdivision 10, 5
+  =>   | Dhet Re Te Dhi Tin | Tun Dha Din Te Ta|
+
+def gen_multi_subdivison numberofhits, sub1, sub2
+
+ gen_multi_subdivison 10, 2, 3
+ => |  Ka  Din  |  Tin  Dha3  Ka  |  Te  The2  |  Ta  The  The2  |
+						</code></pre>
+					</section>
+					<section data-transition="slide">
+						<p>
+							Some Analyzers
+						</p>
+						<pre><code data-trim contenteditable>
+ analyze_composition composition_file, return_number_of_hits, return_frequency_of_hits 
+
+ analyze_composition "My_File.txt", 1, 0 
+ => bol_count
+ bol_count["Ta"]=> 15
+
+  analyze_composition "My_File.txt", 0, 1 
+ => bol_freq
+ bol_freq["Ta"]=> 0.05
+						</code></pre>
+					</section>
+					<section data-transition="slide">
+						<p>
+							The meat of the project, the Markov Analyzer
+						</p>
+						<pre><code data-trim contenteditable>
+def markov_analysis composition_file, depth
+
+markov_analysis "My_file.txt", 1
+=> bol_hash_hash
+
+bol_hash_hash["Ta"]["Tin"]=> 0.13
+
+
+markov_analysis "My_file.txt", 2
+=> bol_hash_hash
+
+bol_hash_hash["Ta"]["Tin Da"]=> 0.03
+						</code></pre>
+					</section>
+
+					<section data-transition="slide">
+					<h2>Markov analysis example</h2>
+					<pre><code data-trim contenteditable>
+s = "Te Dha3 Ge Tun Re Ge Te"
+
+markov_analysis s, 1
+=> Hash
+
+Hash:
+{ "Tun"=>{"Ge "=>1.0}, "Te"=>{"Ge "=>0.5},
+ "Re"=>{"Tun "=>1.0}, "Ge"=>{"Dha3 "=>0.5, "Re "=>0.5},
+ "Dha3"=>{"Te "=>1.0} }
+					</code></pre>
+				</section>
+
+
+				<section data-transition="slide">
+					<h2>Markov Chains</h2>
+				</section>
+
+				<section data-transition="slide">
+					<h2>Mathematically</h2>
+					<p>$\Pr(X_{n+1}=x\mid X_1=x_1, X_2=x_2, \ldots, X_n=x_n) = \Pr(X_{n+1}=x\mid X_n=x_n)$</p>
+					<p> as long as  $\Pr(X_1=x_1,...,X_n=x_n)>0$</p>
+				</section>
+
+				<section data-transition="slide">
+					<h2>In English</h2>
+					<p>A random process for transitioning between states with no memory</p>
+				</section>
+
+				<section data-transition="slide">
+					<h2>In Pictures</h2>
+					<a href="#" >
+						<img width="500" height="500" data-src="images/Markov_chain.jpg" alt="Markov">
+					</a>
+				</section>
+
+
+					<section data-transition="slide">
+					<h2>Visualizations</h2>
+					<pre><code data-trim contenteditable>
+def comp_graph composition_file, output_name, bol, graph_type
+
+ comp_graph "My_file.txt", "My_save_file" "Dha", "circular"
+ => My_save_file.png
+
+ comp_graph "My_file.txt", "My_save_file" "Dha", " straight"
+  => My_save_file.png
+					</code></pre>
+				</section>
+
+									<section data-transition="slide">
+					<h2>Visualizations 2</h2>
+					<pre><code data-trim contenteditable>
+def total_composition_graph composition_file, output_name, theory, graph_output_type
+
+total_composition_graph "My_composition", "My_graph", true, 2
+=> My_graph.png
+=> "graph theory analysis results output to the command line..."
+
+total_composition_graph "My_composition", "My_graph", false, 2
+=> My_graph.png
+					</code></pre>
+				</section>
+
+				<section data-transition="slide">
+					<h2>Visualizations 3</h2>
+					<pre><code data-trim contenteditable>
+def charts data_array, chart_title
+
+ charts my_array, "My_chart"
+  => My_chart.png
+					</code></pre>
+				</section>
+				</section>
+
+				<section data-transition="slide">
+					<section data-transition="slide">
+						<h2>Data from my experiments</h2>
+						<p>
+							What does it all do...
+						</p>
+					</section>
+
+					<section data-transition="slide"> 
+						<h2>Kaida 43</h2>
+						 <small>491 hits long</small>
+						<pre><code data-trim contenteditable>
+Dha2 Dha2 Te Te Dha2 Dha2 Tun Na Ta Ta Te Te Dha2 Dha2 Dhi2 Na 
+Dha2 Dha2 Te Te Dha2 Dha2 Te Te Dha2 Dha2 Te Te Dha2 Dha2 Tun Na 
+Ti Ta Te Te Ta Ta Te Te Dha2 Dha2 Te Te Dha2 Dha2 Dhi2 Na 
+Dha2 Dha2 Te Te Te Te Te Te Dha2 Dha2 Te Te Dha2 Dha2 Tun Na 
+Ta Te Te Te Te Te Te Dha2 Dha2 Te Te Dha2 Dha2 Dhi2 Na 
+Dha2 Dha2 Te Te Te Te Dha2 Dha2 Dha2 Dha2 Te Te Dha2 Dha2 Tun Na 
+Ta Te Te Te Te Ta Ta Dha2 Dha2 Te Te Dha2 Dha2 Dhi2 Na 
+Dha2 Dha2 Te Te Te Te Dha2 Dha2 Te Te Te Te Dha2 Dha2 Tun Na 
+Ta Te Te Te Te Ta Ta Te Te Te Te Dha2 Dha2 Dhi Na 
+Dha2 Dha2 Te Te Te Te Dha2 Dha2 Te Te Te Te Dha2 Dha2 Te Te 
+Te Te Dha2 Dha2 Te Te Te Te Dha2 Dha2 Te Te Dha2 Dha2 Tun Na 
+Ta Ta Te Te Te Te Ta Ta Te Te Te Te Ta Ta Te Te 
+Te Te Te Ta Te Te Te Te Dha2 Dha2 Te Te Dha2 Dha2 Dhi2 Na 
+Dha2 Te Te Dha2 Te Te Te Te Dha2 Dha2 Te Te Dha2 Dha2 Tun Na 
+Ta Te Te Te Te Te Te Te Dha2 Dha2 Te Te Dha2 Dha2 Dhi Na 
+Dha2 Te Te Dha2 Dha2 Te Te Dha2 Dha2 Te Te Dha2 Dha2 Dha2 Tun Na 
+Ta Te Te Ta Ta Te Te Ta Dha2 Te Te Dha2 Dha2 Dha2 Dhi Na 
+Dha2 Te Te Dha2 - Te Te Dha2 Dha2 Te Te Dha2 Dha2 Dha2 Tun Na 
+Ta Te Te Ta - Te Te Ta - Te Te Dha2 Dha2 Dha2 Dhi Na 
+Dha2 Ta Te Dha2 - - Dha2 Te Dha2 - - Dha2 Dha2 Tun Na 
+Ta Te Te Ta - - Ta Te Ta - Dha2 Dha2 Dhi Na 
+Dha2 Te Te Dha2 - - Dha2 - - Dha2 - - Dha2 Dha2 Tun Na 
+Ta Te Te Ta - - Ta - - Ta - - Dha2 Dha2 Dhi Na 
+Dha2 Te Te Dha2 - - Dha2 - - Dha2 Te Te Dha2 Dha2 Tun Na 
+Ta Te Te Ta - - Ta - - Ta Te Te Dha2 Dha2 Dhi2 Na 
+Dha2 Te Te Dha2 - - Dha2 - Dha2 Dha2 Te Te Dha2 Dha2 Tun Na 
+Ta Te Te Ta - - Ta - Dha2 Dha2 Te Te Dha2 Dha2 Dhi2 Na 
+Dha2 Te Te Dha2 - - Dha2 - Dha2 - - Dha2 - Dha2 - -
+Dha2 - - - - - - - Dha2 Te Te Dha2 - - Dha2 -
+Dha2 - - Dha2 - Dha2 - - Dha2 - - - - - - -
+Dha2 Te Te Dha2 - - Dha2 - Dha2 - - Dha2 - Dha2 - -
+Dha2
+					</code></pre>
+					</section>
+
+					<section data-transition="slide">
+						<a href="#" >
+						<img width="1100" height="600" data-src="images/1.png" alt="Chart">
+						</a>
+					</section>
+					<section data-transition="slide">
+						<a href="#" >
+						<img width="1100" height="600" data-src="images/2.png" alt="Chart">
+						</a>
+					</section>		
+					<section data-transition="slide">
+						<a href="#" >
+						<img width="1100" height="600" data-src="images/3.png" alt="Chart">
+						</a>
+					</section>	
+					<section data-transition="slide">
+						<a href="#" >
+						<img width="1100" height="600" data-src="images/m4.png" alt="Chart">
+						</a>
+					</section>	
+					<section data-transition="slide">
+						<a href="#" >
+						<img width="1100" height="600" data-src="images/m5.png" alt="Chart">
+						</a>
+					</section>	
+					<section data-transition="slide">
+						<a href="#" >
+						<img width="1100" height="600" data-src="images/m6.png" alt="Chart">
+						</a>
+					</section>	
+					<section data-transition="slide">
+						<a href="#" >
+						<img width="1100" height="600" data-src="images/m7.png" alt="Chart">
+						</a>
+					</section>	
+					<section data-transition="slide">
+						<a href="#" >
+						<img width="1100" height="600" data-src="images/m8.png" alt="Chart">
+						</a>
+					</section>	
+					<section data-transition="slide">
+						<a href="#" >
+						<img width="1100" height="600" data-src="images/m9.png" alt="Chart">
+						</a>
+					</section>	
+					<section data-transition="slide">
+						<a href="#" >
+						<img width="1100" height="600" data-src="images/m10.png" alt="Chart">
+						</a>
+					</section>	
+
+					<section data-transition="slide">
+						<p> Some graph output</p>
+					</section>	
+					<section data-transition="slide">
+						<a href="#" >
+						<img width="1576" height="700" data-src="images/Whole_comp_graph_num2.png" alt="Chart">
+						</a>
+					</section>	
+
+					<section data-transition="slide">
+						<a href="#" >
+						<img width="1576" height="700" data-src="images/Whole_comp_graph_num3.png" alt="Chart">
+						</a>
+					</section>	
+
+					<section data-transition="slide">
+						<a href="#" >
+						<img width="1576" height="700" data-src="images/Whole_comp_graph_num4.png" alt="Chart">
+						</a>
+					</section>	
+
+					<section data-transition="slide">
+						<a href="#" >
+						<img width="1576" height="700" data-src="images/true.png" alt="Chart">
+						</a>
+					</section>	
+					<section data-transition="slide">
+						<a href="#" >
+						<img width="1576" height="700" data-src="images/c.png" alt="Chart">
+						</a>
+					</section>	
+					<section data-transition="slide">
+						<a href="#" >
+						<img width="248" height="700" data-src="images/single.png" alt="Chart">
+						</a>
+					</section>	
+						<section data-transition="slide">
+						<a href="#" >
+						<img width="679" height="657" data-src="images/singlec.png" alt="Chart">
+						</a>
+					</section>
+
+				</section>
+			
+				<section data-transition="slide">
+						<p><h2>Summary</h2></p>
+						<p> Future work to be done: </p>
+						<ul>
+							<li>Develop cost function to pick from multiple markov compositions</li>
+							<li>Identify repeated phrases, variable depth</li>
+							<li>Midi integration (currently in progress)</li>
+							<li>Add 3D graphing output</li>
+							<li>Get a larger dataset of actual compositions</li>
+							
+						</ul>
+				</section>	
+
+				<section data-transition="convex">
+					<h2>Thanks</h2>
+					<p>
+						Thanks to my wife, my son Hunter for giving me the opportunity for lots of late night work. Thanks to the conference organizers for putting this on.
+					</p>
+					<p>
+						Shoot me an email: <q>Trace.W.Norris@gmail.com</q> Check out the code for this project:
+					</p>
+					<blockquote>
+						github.com/ThunderHeavyIndustries/TablaRasa
+					</blockquote>
+					<blockquote>
+						github.com/ThunderHeavyIndustries/Tabla_Bot
+					</blockquote>
+					<blockquote>
+					github.com/ThunderHeavyIndustries/TablaRasa_revealjs_presentation
+				</blockquote>
+				</section>
+
+
+				
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				slideNumber: false,
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				    math: {
+        mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
+        config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+    },
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/math/math.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
